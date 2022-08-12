@@ -1,0 +1,44 @@
+<html> 
+	<head> 
+		<title>Pesanan</title>
+        <link rel="stylesheet" href="tampilan.css" />
+	</head>
+
+    <body>
+        <div class="container">
+            <h2>pesanan</h2>
+            <form onsubmit="totalOrder(event)">
+                <div id="menu" class="daftarmenu">
+                    <h5 onclick="totalharga(18000, 'menu1')" id='menu1'><b>Ayam crispy</b> 
+                        <span class="u3-right =3-tag w3-dark-grey 3-round">Rp. 18.000</span></h5>
+                  
+                    <h5 onclick="totalharga(18000, 'menu2')" id='menu2'><b>ayam spicy</b> 
+                        <span class="vd-right 3-tag 3-dark-grey 3-round">Rp. 18.000</span></h5>                 
+                    
+                    <h5 onclick="totalharga(8000, 'menu3')" id='menu3'><b>nasi putih</b> 
+                        <span class="w-right 3-tag w3-dark-grey 3-round">Rp. 8.000</span></h5>
+                     
+                    <h5 onclick="totalharga(12000, 'menu4')" id='menu4'><b>nugget</b> 
+                        <span class="w-right 3-tag 3-dark-grey 3-round">Rp. 12.000</span></h5>
+                    
+                    <h5 onclick="totalharga(15000, 'menu5')" id='menu5'><b> beef burger</b> 
+                        <span class="wl-right 3-tag 3-dark-grey w3-round">Rp. 15.000</span></h5>
+                    
+                    <h5 onclick="totalharga(5000, 'menu6')" id='menu6'><b> Mineral</b> 
+                        <span class="wl-right 3-tag 3-dark-grey w3-round">Rp. 5.000</span></h5>
+                    <br>
+                    <label for="total">Total Harga: </label>
+                    <input type="text" name="total" id='total' value="0" readonly>
+                
+                </div>
+            </form>
+            <p id="total"></p>
+        </div>
+        
+    </body>
+    </script>
+    <script src="app.js"></script>
+</html>
+
+
+    
